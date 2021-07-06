@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>test: html/css/js</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			h1{
+				background-color:  tomato;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 id="target">eventと処理のテスト</h1>
+
+		<hr>
+
+		<p>
+			eventが発生すると、それに応じて処理を実行します。
+		</p>
+
+		<script type="text/javascript" >
+			document.getElementById("target").onmouseleave = function(
+				){
+				alert("ALOHA!")
+			}
+
+		</script>
+
+	</body>
+</html>
