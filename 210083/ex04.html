@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex04</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<h1>JS: ex04</h1>
+
+<hr>
+
+<script type="text/javascript">
+	const weight = 60
+	const height = 1.65
+	const BMI = weight / ( height * height )
+	console.log( BMI )
+
+	if( BMI < 18.5 ){
+		console.log("瘦せている")
+	}
+
+	if( 18.5 <= BMI && BMI < 25 ){
+		console.log("普通")
+	}
+
+	if( 25 <= BMI ){
+		console.log("太っている")
+	}
+</script>
+
+</body>
+</html>
