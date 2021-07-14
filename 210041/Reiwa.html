@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+  	<title>JS: year</title>
+  	<meta charset="utf-8">
+  </head>
+  <body>
+  	<h1>JS: year</h1>
+  	<hr>
+
+
+  	<ladel>year</ladel>
+  	<input type="number" id="year"
+  	//<button></button>
+    <button id="btn">変換</button>
+
+
+  	<script>
+  		const btn = document.getElementById( "btn" )
+  		btn.onclick = function() {
+  		 let year = document.getElementById( "year" ).value
+  	     year = year - 2018
+  	     console.log( "令和" + year + "年です。" )
+  	 }
+  	</script>
+  </body>
+</html>
