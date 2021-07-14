@@ -1,15 +1,27 @@
-<ladel>data</ladel>
-<input type="number" id="data">
-<button id="btn">OK</button>
+<!doctype html>
+<html>
+  <head>
+  	<title>JS: うるう年</title>
+  	<meta charset="utf-8">
+  </head>
+  <body>
+  	<h1>JS: うるう年</h1>
+  	<hr>
 
 
-<script>
-	const data = document.getElementById( "data" ).value
-	console.log( data )
+  	<ladel>year</ladel>
+    <input type="number" id="year"
+    //<button></button>
+    <button id="btn">変換</button>
 
-	const btn = document.getElementById( "btn" )
-	btn.onclick = function(){//処理を書く}
 
-    const data = document.getElementById( "data" ).value
-    document.write( data )
-</script>
+    <script>
+      const btn = document.getElementById( "btn" )
+      btn.onclick = function() {
+        let year = document.getElementById( "year" ).value
+          if ( year % 4 == 0) {console.log( "うるう年です" )}
+          else{console.log( "うるう年ではありません" )}
+      }
+    </script>
+  </body>
+</html>
