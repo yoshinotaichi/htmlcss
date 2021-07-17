@@ -1,0 +1,27 @@
+ <h1>JS: ex04</h1>
+   
+   <hr>
+   
+   <script>
+   	let height = 175 / 100
+   	let weight =75
+   	let BMI = weight / (height * height);
+
+   	BMI = Math.floor(BMI * 10) / 10;
+
+   	console.log(BMI);
+
+  //`BMI < 18.5`の場合、`痩せている`と出力する
+  //`18.5 <= BMI < 25`の場合、`普通`と出力する
+  //`25 <= BMI`の場合、`太っている`と出力する
+
+   	if (BMI < 18.5){
+   		console.log("痩せている");
+   	}else if(18.5 <= BMI < 25) {
+   		console.log("普通");
+   	}else if(25 <= BMI) {
+   		console.log("太っている");
+   	}
+     
+   </script>   	
+ 

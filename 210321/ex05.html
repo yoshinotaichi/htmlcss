@@ -1,0 +1,36 @@
+<!doctype html>
+  <html>
+    <head>
+      <title>JS: year</title>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <h1>JS: year</h1>
+      <hr>
+      
+      <label>year</label>
+      <input type="number" id="year">
+      <button id="btn">変換</button>
+      
+      <script>
+        // buttonをクリックしたら、処理を実行する
+        const btn = document.getElementById( "btn" )
+        btn.onclick = function() {
+          // input の値を取得する（ const でなく、let ）
+          let year = document.getElementById( "year" ).value
+          
+          // 令和に変換する; year - 2018
+          year_num = year - 2018
+          
+          // 変換結果を出力する
+          console.log( "令和" + year_num + "年です。" );
+
+           if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+                console.log("うるう年です");
+              } else {
+                console.log("うるう年ではありません");
+            }
+        }
+      </script>
+    </body>
+  </html>
